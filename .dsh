@@ -908,7 +908,7 @@ complete -o default -o bashdefault -F _complete_get gya
 complete -o default -o bashdefault -F _complete_get getj
 complete -o default -o bashdefault -F _complete_getpod getc
 complete -o default -o bashdefault -F _complete_logs log
-complete -o default -o bashdefault -F _complete_edit edit
+complete -o default -o bashdefault -F _complete_edit edi
 complete -o default -o bashdefault -F _complete_del del
 complete -o default -o bashdefault -F _complete_exe exe
 complete -o default -o bashdefault -F _complete_exe exesh
