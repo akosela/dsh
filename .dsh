@@ -6,7 +6,7 @@
 # awk, b, bc, bs, bsd, cal, c, cc, cd, cl, chm, cho, cp, cut, date, dc, dd,
 # dec, df, d, du, e, enc, expr, f, file, fmt, free, gdb, g, gzip, h, id, ldd,
 # le, ln, l, m, mcd, md, mv, nl, nohup, o, od, p, patch, paste, ps, rev, rm,
-# rmdir, sed, seq, shuf, size, sleep, sort, split, stat, strings, sb, set, su,
+# rd, sed, seq, shuf, size, sleep, sort, split, stat, strings, sb, set, su,
 # sd, tac, tar, t, tee, time, top, touch, tr, tree, ty, un, uniq, u, v, w, wa,
 # wc, whereis, which, x, xargs, y, z
 
@@ -137,6 +137,7 @@ alias p='echo'
 alias print='echo'
 alias o='pwd'
 alias r='ip r'
+alias rd='rmdir'
 alias s='ssh'
 alias sb='sudo bash'
 alias sd='sudo '
