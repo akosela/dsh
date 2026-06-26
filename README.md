@@ -19,7 +19,7 @@ source ~/.dsh
 - Helper functions for pods, images, volumes, labels, events, resources, and node capacity
 - TLS certificate inspection helpers using `openssl`
 - Network helpers for `ping`, `curl`, `mtr`, DNS, and routing
-- Simple dice/random aliases using `shuf`
+- Simple dice RPG aliases using `shuf`
 - Light/dark terminal-aware theme choices for `bat` and Git log colors
 - Bash completion wiring for custom Kubernetes aliases
 
@@ -112,7 +112,7 @@ alias v='vi'
 alias x='exit'
 ```
 
-It also provides dice rpg helpers using `shuf`:
+It also provides dice RPG helpers using `shuf`:
 
 ```sh
 alias d6='shuf -i 1-6 -n 1'
