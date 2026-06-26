@@ -20,8 +20,6 @@
 
 terminal_background=light  # light|dark
 
-command -v figlet >/dev/null 2>&1 && figlet -f smslant dsh
-
 if [ -z "$PS1" ]; then
   shopt -s expand_aliases
 fi
