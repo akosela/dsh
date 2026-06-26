@@ -249,7 +249,7 @@ tls host        # print certificate details
 tlsend host     # print certificate expiration
 tlspem host     # print PEM certificate
 tlsv host       # verbose s_client output
-tlscheck cert.pem cert.key
+tlscheck cert.pem cert.key    # check whether an X.509 certificate and RSA private key match.
 ```
 
 Example:
