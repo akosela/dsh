@@ -33,6 +33,7 @@ else
 fi
 
 PS1='\h `git branch --show-current 2>/dev/null | sed "s/\(.*\)/(\1) /"`\$ '
+#PS1='`git branch --show-current 2>/dev/null | sed "s/\(.*\)/(\1) /"`\$ '
 export PS1
 export PAGER=less
 export GIT_PAGER='less -+S'
@@ -42,6 +43,10 @@ export LANG=en_US.UTF-8
 export LESS='-XFR'
 export MANLESS=:
 export SYSTEMD_LESS=FRXMK
+export PYTHONWARNINGS="ignore:Unverified HTTPS request"
+
+# bash_completion
+source /opt/local/share/bash-completion/bash_completion
 
 # ansible colors
 export ANSIBLE_COLOR_OK='normal'
