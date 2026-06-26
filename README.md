@@ -245,17 +245,17 @@ laststate my-pod
 `dsh` includes several OpenSSL wrappers:
 
 ```sh
-tls host:443        # print certificate details
-tlsend host:443     # print certificate expiration
-tlspem host:443     # print PEM certificate
-tlsv host:443       # verbose s_client output
+tls host        # print certificate details
+tlsend host     # print certificate expiration
+tlspem host     # print PEM certificate
+tlsv host       # verbose s_client output
 tlscheck cert.pem cert.key
 ```
 
 Example:
 
 ```sh
-tlsend example.com:443
+tlsend example.com
 ```
 
 ## Network helpers
@@ -270,8 +270,8 @@ mtr -t host     # terminal mtr mode
 DNS and network-related aliases include:
 
 ```sh
-alias dig='dig'
-alias host='host'
+alias a='ansible'
+alias ap='ansible-playbook'
 alias n='netstat -pant'
 alias i='ip -br a'
 alias r='ip r'
