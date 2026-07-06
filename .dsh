@@ -638,6 +638,12 @@ tlscheck()
   openssl rsa -noout -modulus -in $2 | openssl md5
 }
 
+ktls()
+{
+  kubectl get secret $1 -oyaml | grep tls.crt: | cut -d' ' -f4 \
+    | base64 -d | openssl x509 -noout -text
+}
+
 ct()
 {
   if [ ! -z $1 ]; then
