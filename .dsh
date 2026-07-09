@@ -638,6 +638,11 @@ tlscheck()
   openssl rsa -noout -modulus -in $2 | openssl md5
 }
 
+tlslist()
+{
+  openssl crl2pkcs7 -nocrl -certfile $1 | openssl pkcs7 -print_certs -noout
+}
+
 ktls()
 {
   kubectl get secret $1 -oyaml | grep tls.crt: | cut -d' ' -f4 \
