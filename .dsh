@@ -3,9 +3,9 @@
 # url   : https://github.com/akosela/dsh
 
 # core
-# awk, b, bc, bs, bsd, cal, c, cc, cd, cl, chm, cho, cp, cut, date, dc, dd,
+# awk, b, bc, bs, bsd, cal, c, cc, cl, chm, cho, cp, cut, date, dc, dd,
 # dec, df, d, du, e, enc, expr, f, file, fmt, free, gdb, g, gzip, h, id, ldd,
-# le, ln, l, m, mcd, md, mv, nl, nohup, o, od, p, patch, paste, ps, rev, rm,
+# le, ln, l, m, mcd, md, mv, nl, nohup, o, od, p, patch, paste, ps, q, rev, rm,
 # rd, sed, seq, shuf, size, sleep, sort, split, stat, strings, sb, set, su,
 # sd, tac, tar, t, tee, time, top, touch, tr, tree, ty, un, uniq, u, v, w, wa,
 # wc, whereis, which, x, xargs, y, z
@@ -73,10 +73,10 @@ alias ai='ansible-inventory'
 alias ap='ansible-playbook'
 alias bs='base64'
 alias bsd='base64 -d'
-alias c='cat '
-alias cd..='cd ..'
-alias cd...='cd ../..'
-alias cd....='cd ../../..'
+alias c='cd'
+alias c..='cd ..'
+alias c...='cd ../..'
+alias c....='cd ../../..'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -136,6 +136,7 @@ alias n='netstat -pant'
 alias p='echo'
 alias print='echo'
 alias o='pwd'
+alias q='exit'
 alias r='ip r'
 alias rd='rmdir'
 alias s='ssh'
@@ -153,7 +154,7 @@ alias u='uptime'
 alias un='uname -a'
 alias v='vi'
 alias vim='vi -u ~/.exrc.white'
-alias x='exit'
+alias x='cat '
 alias y='yes'
 alias z='kill'
 alias zc='zcat'
