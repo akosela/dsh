@@ -12,7 +12,7 @@
 
 # core network
 # a, arp, cu, curl, cs, dig, fin, ftp, host, i, ifconfig, n, nc, nmap, mtr,
-# png, r, rsync, s, scp, socat, ss, telnet, tcpdump, whois
+# png, r, rsync, s, scp, sc, ss, telnet, tcpdump, whois
 
 # core k8s
 # ann, app, att, cor, cre, ct, ctl, deb, del, des, dra, edi, eve, exe, exesh,
@@ -140,6 +140,7 @@ alias r='ip r'
 alias rd='rmdir'
 alias s='ssh'
 alias sb='sudo bash'
+alias sc='socat'
 alias sd='sudo '
 alias sudo='sudo '
 alias t='tail'
