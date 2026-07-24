@@ -11,6 +11,10 @@ The main file is intended to be sourced into an interactive shell as `~/.dsh`.
 source ~/.dsh
 ```
 
+## Tutorial
+
+[Download the Dunix Darkshell Operator Primer 2990](./Dunix_Darkshell_Operator_Primer_2990.pdf)
+
 ## Features
 
 - Compact aliases for common Unix commands
