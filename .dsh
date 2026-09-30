@@ -63,6 +63,28 @@ set -o vi
 # enable ^L to clear screen
 bind -m vi-insert "\C-l":clear-screen
 
+# resolve shell aliases when looking up manual pages.
+man()
+{
+  local arg definition target
+  local -a resolved=()
+
+  for arg in "$@"; do
+    if [[ "$arg" != -* ]] &&
+      definition=$(builtin alias -- "$arg" 2>/dev/null); then
+      target=${definition#*=\'}
+      target=${target%\'}
+
+      target=${target%%[[:space:]]*}
+      resolved+=("$target")
+    else
+      resolved+=("$arg")
+    fi
+  done
+
+  command man "${resolved[@]}"
+}
+
 # aliases
 alias 2d6='shuf -i 1-12 -n 1'
 alias 3d6='shuf -i 1-18 -n 1'
