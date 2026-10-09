@@ -318,6 +318,10 @@ On macOS with MacPorts, some GNU tools are expected under:
 /opt/local/bin
 ```
 
+<p align="left">
+  <img src="Y.png" alt="Civilization Y" width="661">
+</p>
+
 ## Background: Civilization Y
 
 `dsh`, or **darkshell**, is a small Unix-style shell environment imagined as
